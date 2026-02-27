@@ -1,0 +1,58 @@
+{
+  "name": "create-pult-app",
+  "version": "0.1.0",
+  "description": "Create a new Pult app with one command",
+  "type": "module",
+  "bin": {
+    "create-pult-app": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pult",
+    "create",
+    "scaffolding",
+    "cli",
+    "paas",
+    "baas",
+    "nextjs",
+    "remix",
+    "svelte",
+    "nuxt",
+    "astro",
+    "express",
+    "fastify",
+    "hono"
+  ],
+  "author": "Pult <hello@pult.rest>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getPult/create-pult-app.git"
+  },
+  "homepage": "https://pult.rest",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

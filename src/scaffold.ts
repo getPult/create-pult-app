@@ -1,4 +1,4 @@
-import { join, resolve } from "node:path"
+import { resolve } from "node:path"
 import * as p from "@clack/prompts"
 import pc from "picocolors"
 import type { ProjectConfig } from "./config.js"
